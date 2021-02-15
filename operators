@@ -1,0 +1,16 @@
+import 'dart:io';
+
+main() {
+  print("Enter a number : ");
+  int number = 0;
+  try {
+    number = int.parse(stdin.readLineSync());
+    if (number % 2 == 0) {
+      print('Even');
+    } else if (number % 2 != 0) {
+      print('Odd');
+    }
+  } catch (e) {
+    print("Enter Valid Number ");
+  }
+}
